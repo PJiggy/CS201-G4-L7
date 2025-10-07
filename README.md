@@ -27,11 +27,10 @@ Average for student 1: 87.50
 Average for student 2: 83.00
 Average for student 3: 93.50
 Class average: 88.00
+-----------------------------------------------------------------------------
 Lab Question 2: Rainfall Tracker
-Write a C++ program that uses a three-dimensional array (or nested vectors) to store
-rainfall data. The program should ask the user how many years, months per year, and
-weeks per month to record. It should then store rainfall data (in mm) for each week,
-calculate the average monthly rainfall for each year, and display the results.
+Write a C++ program that uses a three-dimensional array (or nested vectors) to store rainfall data. The program should ask the user how many years, months per year, and weeks per month to record. It should then store rainfall data (in mm) for each week,calculate the average monthly rainfall for each year, and display the results.
+
 Requirements:
 1. Accept dynamic input for number of years, months, and weeks.
 2. Use a 3D structure (e.g., `vector<vector<vector<double>>>`).
@@ -51,9 +50,9 @@ Month 2: 15.00 mm
 Year 2 average rainfall per month:
 Month 1: 10.00 mm
 Month 2: 8.00 mm
+------------------------------------------------------------------
 Lab Question 3: Test Score Manager
-Write a C++ program that uses an STL vector to store test scores entered by the user. The
-program should first ask how many scores will be entered, then store all scores in a vector.
+Write a C++ program that uses an STL vector to store test scores entered by the user. The program should first ask how many scores will be entered, then store all scores in a vector.
 After input, display the average, highest, and lowest score.
 Requirements:
 1. Use an STL vector to dynamically store user-entered scores.
