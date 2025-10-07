@@ -6,7 +6,7 @@ using namespace std;
 // create the vector for student scores 
 vector<double> scores;
 
-void testsAmmount(){
+void testsAmount(){
     int tests; // temp variable for tests
     
     // prompt user to enter amount of tests to be graded
@@ -17,14 +17,20 @@ void testsAmmount(){
         cin >> tests;
     }
     // now to resize the vector for the amount of tests
-    scores.resize(tests);
+    scores.resize(tests,0); // resizes and sets values to 0
 }
 
 void testEnter(){
+    // check if vector is empty
+    if(scores.empty()){
+        // call the testAmmount() to fill vector
+        testsAmount();
+    }
+
     // prompt for user to enter test scores
     cout << "Please enter " << scores.size() << " scores:";
 
-    int value;// temp for value to be read in
+    double value;// temp for value to be read in
     // need to enter all values
     for(int i = 0; i < scores.size(); i++){
         // output a space for formatting between values
@@ -39,3 +45,32 @@ void testEnter(){
 }
 
 // need to do the calculations function
+void scoreCalculate(){
+    double highest, lowest, total; // temp variables
+
+    // check if vector is empty
+    if(scores.empty()){
+        // can just call the two prior functions here
+        testsAmount();
+        testEnter();
+    }
+    // now need to interate through array to calculate 
+    // keep track of highest, lowest, then sum total for average
+
+    for(int i = 0; i < scores.size(); i++){
+        // check if highest
+        if(scores[i] > highest){
+            highest = scores[i];
+        }
+        if(scores[i] < lowest){
+            lowest = scores[i];
+        }
+    }
+
+    // now do the outputs 
+    cout << "\nAverage score:" << total / scores.size();
+    cout << "\nHighest score:" << highest;
+    cout << "\nLowest score:" << lowest;
+}
+
+
