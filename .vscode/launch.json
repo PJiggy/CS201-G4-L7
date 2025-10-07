@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/tysonlam/CS201-G4-L7",
+      "program": "/Users/tysonlam/CS201-G4-L7/build/Debug/outDebug"
+    }
+  ]
+}
