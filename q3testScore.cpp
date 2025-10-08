@@ -65,6 +65,7 @@ void scoreCalculate(){
         if(scores[i] < lowest){
             lowest = scores[i];
         }
+        total += scores[i];
     }
 
     // now do the outputs 
@@ -73,4 +74,7 @@ void scoreCalculate(){
     cout << "\nLowest score:" << lowest;
 }
 
-
+int main(){
+    scoreCalculate(); // all of functions called when empty
+    return 0;
+}

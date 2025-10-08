@@ -64,4 +64,4 @@ Enter 4 scores: 88 92 75 95
 Expected Output:
 Average score: 87.50
 Lowest score: 75.00
-Highest score: 95.00
+Highest score: 95.00 
