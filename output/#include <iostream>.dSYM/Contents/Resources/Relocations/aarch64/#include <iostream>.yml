@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/tysonlam/CS201-G4-L7/output/#include <iostream>'
+relocations:     []
+...
